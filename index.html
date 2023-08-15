@@ -6,6 +6,7 @@
         <meta name="viewpoint" content="width-device-width, initial-scale-1.0">
         <title>Deepak Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5df4a338bc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -13,12 +14,14 @@
                 <nav>
                     <img src="Images/logo.png" class="logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        
                     </ul>
+                    
                 </nav>
                 <div class="header-text">
                     <p>Software Engineer</p>
@@ -43,13 +46,169 @@
                             Deepak!</span></p>
 
                             <div class="tab-titles">
-                                <p class="tab-links">Skills</p>
-                                <p class="tab-links">Interests</p>
-                                <p class="tab-links">Education</p>
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>C,C++,Java</span><br>Developing Software and solving problems</li>
+                                    <li><span>Web Development</span><br>Web App Developement</li>
+                                    <li><span>App Developement</span><br>Building Android apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="interests">
+                                <ul>
+                                    <li><span>Youtuber</span><br>Creating Tech Content and Exploring</li>
+                                    <li><span>PC Building</span><br>Building PCs and Solving issues</li>
+                                    <li><span>Business Development</span><br>Creating ideas to improve Business</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2020 - 2024</span><br>B.E Computer Science and Engineering at Dr.N.G.P iTech</li>
+                                    <li><span>2018</span><br>HSC with 66% in VMHSS</li>
+                                    <li><span>2016</span><br>SSLC with 80% in SVNMHSS</li>
+                                </ul>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- ---------services--------------- -->
+        <div id="services">
+            <div class="containder">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>With a strong command of C, C++, and Java, I provide comprehensive programming solutions. From building robust applications to implementing intricate algorithms, my expertise covers a wide spectrum of programming needs.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>App Developement</h2>
+                        <p>Developing dynamic Android applications using the power of Java. From ideation to implementation, I create user-friendly and feature-rich apps that leverage Java's versatility for a seamless mobile experience.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>Web Developement</h2>
+                        <p>Crafting dynamic web experiences using HTML, CSS, and JavaScript. From responsive designs to interactive user interfaces, I bring your web visions to life with creativity and functionality.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------portfolio--------------------------- -->
+         <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/programming 1.jpg">
+                        <div class="layer">
+                            <h3>Programz</h3>
+                            <p>"Harnessing the potential of C, C++, and Java to create solutions that empower and enrich the world."</p>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/app development 1.png">
+                        <div class="layer">
+                            <h3>Emergency Application App</h3>
+                            <p>"An emergency app offers one-click alerts, location tracking, and communication with responders for quick assistance during crises. Users can share information and notify contacts for safety."</p>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/web developement 1.jpg">
+                        <div class="layer">
+                            <h3>Youtube channel Website</h3>
+                            <p>"A Website is about advertising my social media kind of youtube, instagram and other media applications"</p>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+         </div>
+
+         <!-- ----------------- contact -------------------- -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> infodsanjay@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i> +91 9629334650</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="Images/DEEPAK SANJAY Resume.pdf" download="" class="btn btn2">Download CV</a>
+                    </div>
+    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 SDS Vision | Powered by SDS Vision </p>
+            </div>
+         </div>
+
+
+        <script>
+
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            } 
+
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxdqbKn3ccqS92ddKgxYVexnSDbRDynu6OgGZ6w2RdleRMZz_0YBUjQREszB6z8mMmTHQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message has Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
